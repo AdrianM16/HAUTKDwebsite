@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAU Taekwondo Sports Program - Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="nav-container">
+                <h1>HAU Taekwondo Team</h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="event.html">Events</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Image Section -->
+    <div class="image-container" style="height: 300px;">
+        <img src="haulogo.jpg" alt="HAU Taekwondo Team" class="team-image">
+    </div>
+    
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any inquiries about the HAU Taekwondo Sports Program or our upcoming events, feel free to reach out to us using the contact information below or by filling out the form.</p>
+            
+            <div class="contact-details">
+                <p><strong>Email:</strong> hautaekwondo@gmail.com</p>
+                <p><strong>Phone:</strong> +63 912 345 6789</p>
+                <p><strong>Address:</strong> IH-GYM, Holy Angel University, Angeles City, Philippines</p>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="registration">
+                <h2>Send Us a Message</h2>
+                <form action="/submit-contact" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <input type="submit" value="Send Message">
+                </form>
+            </div>
+
+            <!-- Map Section -->
+            <div class="map-container">
+                <h2>Find Us Here</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3851.45960809468!2d120.58743607591046!3d15.133083163816876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396f24ec2f5a1f9%3A0x5e0af8a6aaab2282!2sHoly%20Angel%20University!5e0!3m2!1sen!2sph!4v1728719514761!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-navigation">
+                <a href="event.html" class="nav-arrow" id="back-arrow" title="Back">
+                    &#8592; <!-- Left Arrow -->
+                </a>
+                <p>&copy; 2024 HAU Taekwondo Warriors. All rights reserved.</p>
+                <a href="index.html" class="nav-arrow" id="forward-arrow" title="Next">
+                    &#8594; <!-- Right Arrow -->
+                </a>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="fb.png" alt="Facebook">
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <img src="twt.png" alt="Twitter">
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="ig.jpg" alt="Instagram">
+                </a>
+            </div>
+        </div>
+    </footer>    
+
+</body>
+</html>
