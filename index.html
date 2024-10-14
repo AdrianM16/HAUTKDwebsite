@@ -194,18 +194,16 @@
     </footer>
 
     <script>
-        // Function to check if an element is in the viewport
         function isElementInViewport(el) {
             const rect = el.getBoundingClientRect();
             return (
-                rect.top >= 0 && // Element is not above the viewport
-                rect.left >= 0 && // Element is not left of the viewport
-                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && // Element is not below the viewport
-                rect.right <= (window.innerWidth || document.documentElement.clientWidth) // Element is not right of the viewport
+                rect.top >= 0 && 
+                rect.left >= 0 && 
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && 
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth) 
             );
         }
 
-        // Function to pause videos that are out of view
         function pauseVideosOnScroll() {
             const videos = document.querySelectorAll('.video-section video');
             videos.forEach(video => {
@@ -215,10 +213,8 @@
             });
         }
 
-        // Add scroll event listener
         window.addEventListener('scroll', pauseVideosOnScroll);
     </script>
 
 </body>
-
 </html>
