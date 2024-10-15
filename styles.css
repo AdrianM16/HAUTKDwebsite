@@ -182,29 +182,6 @@ header {
 
     .hero-banner h2 {
         font-size: 28px;
-        color: #900;
-    }
-
-    .hero-banner p {
-        font-size: 16px;
-        color: #900;
-    }
-
-    .button {
-        margin-top: 20px;
-        font-size: 16px;
-    }
-}
-
-/* Mobile Specific Styles */
-@media (max-width: 768px) {
-    .hero-banner {
-        background-color: transparent;
-        padding: 0;
-    }
-
-    .hero-banner h2 {
-        font-size: 28px;
     }
 
     .hero-banner p {
@@ -239,7 +216,6 @@ header {
 .video-item:hover {
     transform: scale(1.02);
 }
-
 
 /* Video Styles */
 .video-item video {
