@@ -65,10 +65,10 @@ header {
         position: absolute;
         top: 60px; 
         left: 0;
-        background-color: rgba(60, 0, 0, 0.993); /* Darker red background */
+        background-color: rgba(60, 0, 0, 0.993); 
         padding: 10px 0;
         z-index: 100;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
     }
 
     .nav-container ul.active {
@@ -94,8 +94,8 @@ header {
     .nav-container ul li a {
         width: 100%; 
         padding: 15px 0; 
-        background-color: rgba(60, 0, 0, 0.993); /* Darker red for links */
-        color: #fff; /* White text color for contrast */
+        background-color: rgba(60, 0, 0, 0.993); 
+        color: #fff; 
         border-radius: 5px; 
         display: block; 
         transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; 
