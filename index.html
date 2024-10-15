@@ -192,29 +192,8 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        function isElementInViewport(el) {
-            const rect = el.getBoundingClientRect();
-            return (
-                rect.top >= 0 && 
-                rect.left >= 0 && 
-                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && 
-                rect.right <= (window.innerWidth || document.documentElement.clientWidth) 
-            );
-        }
-
-        function pauseVideosOnScroll() {
-            const videos = document.querySelectorAll('.video-section video');
-            videos.forEach(video => {
-                if (!isElementInViewport(video)) {
-                    video.pause(); // Pause the video if it's not in view
-                }
-            });
-        }
-
-        window.addEventListener('scroll', pauseVideosOnScroll);
-    </script>
-
+    
+    <script src="script.js"></script>
+    
 </body>
 </html>
