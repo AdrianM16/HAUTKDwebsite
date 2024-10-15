@@ -1,3 +1,4 @@
+
 /* General Styles */
 * {
     margin: 0;
@@ -12,12 +13,10 @@ body {
     padding: 0;
 }
 
-
 /* Header Styles */
 header {
-    text-align: center; 
+    text-align: center;
 }
-
 
 /* Header Navigation Styles */
 .nav-container {
@@ -25,38 +24,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: rgba(88, 4, 4, 0.993); 
-}
-
-.nav-container ul {
-    list-style-type: none;
-    display: flex;
-    gap: 15px;
-}
-
-.nav-container ul li a {
-    color: #fff; /* White text */
-    text-decoration: none;
-    font-size: 1.1rem;
-}
-
-/* Black container with equal padding */
-.image-container {
-    width: 100%; 
-    background-color: black; 
-    padding: 20px; 
-    box-sizing: border-box; 
-    display: flex; 
-    justify-content: center; 
-}
-
-/* Image styles */
-.team-image {
-    width: 100%; 
-    height: 100%; 
-    object-fit: fill; 
-    display: block; 
-    padding: 0; 
+    background-color: rgba(88, 4, 4, 0.993);
 }
 
 .nav-container h1 {
@@ -77,7 +45,7 @@ header {
 }
 
 .nav-container ul li a {
-    color: #fff; 
+    color: #fff;
     text-decoration: none;
     font-size: 1.1rem;
 }
@@ -87,6 +55,24 @@ header {
     .nav-container {
         flex-direction: column;
         align-items: center;
+        position: relative; 
+    }
+
+    .nav-container ul {
+        display: none; 
+        flex-direction: column; 
+        width: 100%;
+        position: absolute;
+        top: 60px; 
+        left: 0;
+        background-color: rgba(60, 0, 0, 0.993); /* Darker red background */
+        padding: 10px 0;
+        z-index: 100;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+    }
+
+    .nav-container ul.active {
+        display: flex; 
     }
 
     .nav-container h1 {
@@ -97,57 +83,78 @@ header {
     .nav-container ul {
         flex-direction: column;
         align-items: center;
-        gap: 10px;
+        gap: 0; 
         width: 100%;
     }
 
     .nav-container ul li {
-        width: 100%;
-        text-align: center;
+        width: 100%; 
     }
 
     .nav-container ul li a {
-        font-size: 1.1rem;
-        width: 100%;
-        padding: 10px 0;
-        background-color: #fff; 
-        color: #900; 
-        border-radius: 5px;
-        display: block;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-        border: 1px solid #900; 
-        transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; 
+        width: 100%; 
+        padding: 15px 0; 
+        background-color: rgba(60, 0, 0, 0.993); /* Darker red for links */
+        color: #fff; /* White text color for contrast */
+        border-radius: 5px; 
+        display: block; 
+        transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; 
+        text-align: center; 
     }
 
-    /* Box Colors for Navigation Items */
-    .nav-container ul li a:nth-child(1) {
-        background-color: #f5d1d1; 
-    }
-
-    .nav-container ul li a:nth-child(2) {
-        background-color: #f2b2b2; 
-    }
-
-    .nav-container ul li a:nth-child(3) {
-        background-color: #e98a8a; 
-    }
-
-    .nav-container ul li a:nth-child(4) {
-        background-color: #d96565; 
-    }
-
-    /* Hover Effect for Mobile */
     .nav-container ul li a:hover {
-        background-color: #f2f2f2; 
+        background-color: #ffcccc; 
         color: #900; 
         transform: scale(1.05); 
-        box-shadow: 0 4px 15px rgb(161, 2, 2); 
+        box-shadow: 0 4px 15px rgba(161, 2, 2, 0.5); 
+    }
+
+    .nav-container ul li a:active {
+        transform: scale(0.95); 
     }
 }
 
-/* Hero Section Styles */
+/* Hamburger Styles */
+.hamburger {
+    display: none; 
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0; 
+    transition: 0.3s; 
+}
+
+/* Show Hamburger on Mobile */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex; 
+    }
+}
+
+/* Image Section */
+.image-container {
+    width: 100%;
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.team-image {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    display: block;
+}
+
+/* Hero Section */
 .hero-banner {
-    background-color: rgb(167, 8, 8); 
+    background-color: rgb(167, 8, 8);
     color: #fff;
     padding: 20px 25px;
     text-align: center;
@@ -160,8 +167,8 @@ header {
 }
 
 .button {
-    background-color: #fff; 
-    color: #900; 
+    background-color: #fff;
+    color: #900;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -169,11 +176,10 @@ header {
 }
 
 .button:hover {
-    background-color: #900; 
-    color: #fff; 
+    background-color: #900;
+    color: #fff;
 }
 
-/* Mobile Specific Styles */
 @media (max-width: 768px) {
     .hero-banner {
         background-color: transparent;
@@ -182,10 +188,12 @@ header {
 
     .hero-banner h2 {
         font-size: 28px;
+        color: #900;
     }
 
     .hero-banner p {
         font-size: 16px;
+        color: #900;
     }
 
     .button {
@@ -194,7 +202,7 @@ header {
     }
 }
 
-/* Video Section Styles */
+/* Video Section */
 .video-section {
     display: flex;
     justify-content: space-around;
@@ -217,20 +225,18 @@ header {
     transform: scale(1.02);
 }
 
-/* Video Styles */
 .video-item video {
     width: 100%;
     height: auto;
 }
 
-/* Video Item Title Styles */
 .video-item h3 {
     margin-top: 10px;
     color: darkred;
     font-size: 18px;
 }
 
-/* Program Overview Styles */
+/* Program Overview */
 #program {
     background-color: #fff;
     padding: 40px 20px;
@@ -266,24 +272,22 @@ header {
     margin-bottom: 20px;
 }
 
-/* Hover Effect for Program Options */
 .program-option:hover {
     transform: translateY(-10px);
     box-shadow: 0 4px 15px rgb(161, 2, 2);
 }
 
-/* Headings inside Program Options */
 .program-option h3 {
     font-size: 1.5em;
     color: #900;
     margin-bottom: 10px;
 }
 
-/* Paragraphs inside Program Options */
 .program-option p {
     font-size: 1em;
     color: #333;
 }
+
 
 /* Mission Section Styles */
 #mission {
@@ -294,7 +298,6 @@ header {
     margin-bottom: 40px;
 }
 
-/* Mission Section Heading */
 #mission h2 {
     color: darkred;
     text-align: center;
@@ -302,20 +305,17 @@ header {
     font-size: 2em;
 }
 
-/* Mission Section Paragraph */
 #mission p {
     margin-bottom: 20px;
     line-height: 1.6;
     text-align: center;
 }
 
-/* Mission List Styles */
 .mission-list {
     list-style-type: disc;
     margin-left: 40px;
 }
 
-/* Mission List Items */
 .mission-list li {
     margin-bottom: 15px;
     font-size: 16px;
@@ -331,7 +331,6 @@ header {
 
 #why-join h2 {
     color: darkred;
-    text-align: center;
     margin-bottom: 20px;
     font-size: 2em;
 }
@@ -354,7 +353,6 @@ header {
     position: relative;
 }
 
-/* Card image styles */
 .card-image {
     width: 100%;
     height: auto;
@@ -362,7 +360,6 @@ header {
     margin-bottom: 15px;
 }
 
-/* Card content styles */
 .card h3 {
     margin: 10px 0 5px;
     color: #900;
@@ -373,13 +370,11 @@ header {
     color: #333;
 }
 
-/* Hover effects */
 .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgb(161, 2, 2);
 }
 
-/* Responsive styles */
 @media (max-width: 768px) {
     .card {
         width: 45%;
@@ -393,19 +388,12 @@ header {
     }
 }
 
-/* Hover Effect for Cards */
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 15px rgb(161, 2, 2);
-}
-
 /* Sports Program Section Styles */
 #sports-program {
     padding: 40px 20px;
     background-color: #f8f9fa;
 }
 
-/* Center the main title in the Sports Program section */
 #sports-program h2 {
     text-align: center;
     margin-bottom: 30px;
@@ -413,14 +401,12 @@ header {
     font-size: 2em;
 }
 
-/* Program Details */
 .program-details {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-/* Program Item Styles */
 .program-item {
     background-color: #ffffff;
     border: 1px solid #ddd;
@@ -432,13 +418,11 @@ header {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Program Item Hover Effect */
 .program-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Program Item Images */
 .program-image {
     width: 100%;
     height: auto;
@@ -446,19 +430,16 @@ header {
     margin-bottom: 15px;
 }
 
-/* Specific Styles for Varsity Team */
 .varsity-team {
     background-color: #e0f7fa;
 }
 
-/* Specific Styles for Undertraining Students */
 .undertraining-students {
     background-color: #fff3e0;
     border: 2px solid #FF9800;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Program Item Headings */
 .program-item h3 {
     margin-top: 20px;
     margin-bottom: 10px;
@@ -466,7 +447,6 @@ header {
     text-align: center;
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
     .program-item {
         width: 100%;
@@ -510,7 +490,6 @@ footer {
     margin: 0 10px;
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
     .video-section,
     .program-options,
@@ -540,7 +519,6 @@ header h1:hover {
     transform: scale(1.05);
 }
 
-/* Navigation Styles */
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -686,7 +664,11 @@ video::-webkit-media-controls-fullscreen-button:hover {
 }
 
 @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
         transform: translateY(0);
     }
     40% {
@@ -774,10 +756,15 @@ video::-webkit-media-controls-fullscreen-button:hover {
     transform: translateY(-3px);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     color: darkred;
-    font-size: 24px;
     transition: color 0.3s ease;
+}
+
+h1 {
+    font-size: 24px;
 }
 
 h2 {
@@ -867,7 +854,9 @@ form label {
     font-weight: bold;
 }
 
-form input, form select, form textarea {
+form input,
+form select,
+form textarea {
     margin-bottom: 15px;
     padding: 10px;
     font-size: 16px;
@@ -877,11 +866,14 @@ form input, form select, form textarea {
     transition: border-color 0.3s ease;
 }
 
-form input:focus, form select:focus, form textarea:focus {
+form input:focus,
+form select:focus,
+form textarea:focus {
     border-color: darkred;
 }
 
-form input[type="submit"], form button {
+form input[type="submit"],
+form button {
     background-color: darkred;
     color: white;
     cursor: pointer;
@@ -892,7 +884,8 @@ form input[type="submit"], form button {
     transition: background-color 0.3s ease;
 }
 
-form input[type="submit"]:hover, form button:hover {
+form input[type="submit"]:hover,
+form button:hover {
     background-color: #a10000;
 }
 
