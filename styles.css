@@ -164,7 +164,7 @@ body {
 /* Desktop and Tablet View */
 @media (min-width: 1024px) {
     .image-container {
-        height: 880px; 
+        height: 600px; 
     }
 }
 
