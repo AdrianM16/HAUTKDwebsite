@@ -1,206 +1,359 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HAU Taekwondo Sports Program - Home</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>HAU Taekwondo | Holy Angel University Sports Program</title>
+    <meta name="description" content="The official Taekwondo sports program of Holy Angel University, Angeles City. High school varsity and undertraining squads, plus the college varsity team.">
+    <meta name="theme-color" content="#141113">
 
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32"  href="favicon-32.png">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="HAU Taekwondo | Holy Angel University">
+    <meta property="og:description" content="Train with the Holy Angel University Taekwondo team: high school varsity and undertraining, and the college varsity team.">
+    <meta property="og:image" content="https://adrianm16.github.io/HAUTKDwebsite/team-2026.jpg">
+    <meta property="og:url" content="https://adrianm16.github.io/HAUTKDwebsite/">
+
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" sizes="192x192" href="android-chrome-192.png">
-    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Instrument+Sans:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@700;900&display=swap&text=%ED%83%9C%EA%B6%8C%EB%8F%84%EC%98%88%EC%9D%98%EC%97%BC%EC%B9%98%EC%9D%B8%EB%82%B4%EA%B7%B9%EA%B8%B0%EB%B0%B1%EC%A0%88%EB%B6%88%EA%B5%B4%EC%8B%A0%EC%A0%95%ED%9B%88%EB%A0%A8%EC%84%A0%EC%88%98%EC%8A%B9%EB%A6%AC%EC%82%AC%EB%B2%94">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="progress" aria-hidden="true"><span></span></div>
 
-    <!-- Header Section -->
-    <header>
-        <nav>
-            <div class="nav-container">
-                <img src="logohau.png" alt="HAU Logo" class="hau-logo"> 
-                <h1>HAU Taekwondo Team</h1>
-                <div class="hamburger" id="hamburger">
-                    <div></div>
-                    <div></div>
-                    <div></div>
+    <header class="site-header">
+        <nav class="nav wrap" aria-label="Main">
+            <a class="brand" href="index.html">
+                <img src="logohau.png" alt="" width="46" height="46">
+                <span class="brand-text"><b>HAU Taekwondo</b><small>Holy Angel University</small></span>
+            </a>
+            <button class="menu-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="event.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html#message" class="nav-cta">Join the team</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+
+        <!-- HERO -->
+        <section class="hero">
+            <span class="hangul-mark kr" aria-hidden="true">태권도</span>
+            <div class="wrap hero-grid">
+                <div>
+                    <p class="tag">Holy Angel University · Angeles City</p>
+                    <h1>
+                        <span class="line"><span>Bow in.</span></span>
+                        <span class="line"><span>Kick hard.</span></span>
+                        <span class="line"><span class="gold">Rise <span class="scribble">together.<svg viewBox="0 0 200 20" preserveAspectRatio="none" aria-hidden="true"><path d="M3 13 C 38 5, 82 17, 122 9 S 182 5, 197 12"/></svg></span></span></span>
+                    </h1>
+                    <p class="hero-lede">The HAU Taekwondo Sports Program trains high school and college Angelites, from first-day white belts in undertraining to varsity medalists.</p>
+                    <div class="hero-actions">
+                        <a href="#program" class="btn">See the program <span class="arrow" aria-hidden="true">→</span></a>
+                        <a href="event.html" class="btn btn--ghost">Events</a>
+                    </div>
                 </div>
-                <ul class="nav-menu" id="nav-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="event.html">Events</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                <div class="hero-photo">
+                    <figure class="snap">
+                        <img src="team-2026.jpg" alt="The HAU Taekwondo high school and college players together on the mats in red and blue doboks" width="1600" height="1200" fetchpriority="high">
+                        <figcaption>High school + college, one team. The 2026 roster.</figcaption>
+                    </figure>
+                    <div class="stamp" aria-hidden="true"><span><b>HAU</b>Angelites</span></div>
+                </div>
+            </div>
+        </section>
+
+        <div class="belt" aria-hidden="true"></div>
+
+        <!-- TENETS MARQUEE -->
+        <div class="marquee" aria-label="The five tenets of Taekwondo: courtesy, integrity, perseverance, self-control, indomitable spirit">
+            <div class="marquee-track" aria-hidden="true">
+                <ul>
+                    <li><span class="kr">예의</span> Courtesy</li>
+                    <li><span class="kr">염치</span> Integrity</li>
+                    <li><span class="kr">인내</span> Perseverance</li>
+                    <li><span class="kr">극기</span> Self-Control</li>
+                    <li><span class="kr">백절불굴</span> Indomitable Spirit</li>
+                </ul>
+                <ul>
+                    <li><span class="kr">예의</span> Courtesy</li>
+                    <li><span class="kr">염치</span> Integrity</li>
+                    <li><span class="kr">인내</span> Perseverance</li>
+                    <li><span class="kr">극기</span> Self-Control</li>
+                    <li><span class="kr">백절불굴</span> Indomitable Spirit</li>
                 </ul>
             </div>
-        </nav>
-    </header>    
-
-    <!-- Image Section -->
-    <div class="image-container"> 
-        <img src="haulogo.jpg" alt="HAU Taekwondo Team" class="team-image">
-    </div>
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero-banner">
-        <h2>Welcome to the HAU Taekwondo Sports Program</h2>
-        <p>Your journey to strength, discipline, and personal growth starts here!</p>
-        <a href="about.html" class="button view-program-btn">View Program</a>
-    </section>
-
-    <!-- Program Overview Section -->
-    <section id="program">
-        <div class="container">
-            <h2 class="program-title">Taekwondo Sports Program</h2>
-            <p class="program-description">Our program offers comprehensive Taekwondo training for high school and
-                college students, from beginners to advanced practitioners. Whether you aim to develop self-defense
-                skills, boost fitness, or compete in tournaments, our program has something for everyone.</p>
-            <div class="program-options">
-                <div class="program-option">
-                    <h3>College Taekwondo Training</h3>
-                    <p>Specialized training to help college-level athletes reach their full potential in both local and
-                        national competitions.</p>
-                </div>
-                <div class="program-option">
-                    <h3>High School Taekwondo Training</h3>
-                    <p>Designed for high school students, focusing on foundational skills and preparation for
-                        competitive and personal growth.</p>
-                </div>
-            </div>
         </div>
-    </section>
 
-    <!-- Video Gallery Section -->
-    <section id="video-gallery" class="video-section">
-        <div class="video-item">
-            <video controls>
-                <source src="college_training.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <h3>College Taekwondo Training</h3>
-        </div>
-        <div class="video-item">
-            <video controls>
-                <source src="highschool_training.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <h3>High School Taekwondo Training</h3>
-        </div>
-    </section>
+        <!-- PROGRAM -->
+        <section class="section" id="program">
+            <div class="wrap">
+                <div class="head head--split" data-reveal>
+                    <div>
+                        <p class="eyebrow"><span class="num">01</span> The program <span class="kr">훈련</span></p>
+                        <h2>Two tracks.<br>One dojang.</h2>
+                    </div>
+                    <p>Whether you want to build fitness, learn real self-defense, or fight for a podium spot, there's a path for you. High school students can start from zero in undertraining and work up to varsity. College athletes train and compete as one varsity team.</p>
+                </div>
 
-    <!-- Mission Section -->
-    <section id="mission">
-        <div class="container">
-            <h2>Our Mission</h2>
-            <p>We aim to nurture discipline, strength, and respect through the art of Taekwondo. Our experienced
-                instructors guide students on both physical and mental development, instilling core values like
-                integrity, perseverance, and self-control.</p>
-            <ul class="mission-list">
-                <li>Foster a supportive community where students learn to challenge and encourage each other.</li>
-                <li>Build confidence through effective self-defense skills and enhanced physical fitness.</li>
-                <li>Promote mental resilience and a positive attitude toward personal and athletic growth.</li>
-                <li>Develop leadership and teamwork skills, both inside and outside the dojang.</li>
-                <li>Offer competitive training, emphasizing sportsmanship and goal-setting.</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Why Join Us Section -->
-    <section id="why-join">
-        <div class="container">
-            <h2>Why Join Us?</h2>
-            <div class="why-join-cards">
-                <div class="card">
-                    <img src="EC.jpg" alt="Experienced Coaches" class="card-image">
-                    <h3>Experienced Coaches</h3>
-                    <p>Our seasoned instructors provide personalized guidance to help you achieve your goals, whether
-                        you're a beginner or advanced student.</p>
-                </div>
-                <div class="card">
-                    <img src="FTS.jpg" alt="Flexible Training Schedules" class="card-image">
-                    <h3>Flexible Training Schedules</h3>
-                    <p>We offer training options that fit into your busy school schedule, with a focus on fitness,
-                        self-defense, or competitive excellence.</p>
-                </div>
-                <div class="card">
-                    <img src="LNC.jpg" alt="Local and National Competitions" class="card-image">
-                    <h3>Local and National Competitions</h3>
-                    <p>Our students have opportunities to compete locally and nationally, building confidence and
-                        sportsmanship through real-world experiences.</p>
-                </div>
-                <div class="card">
-                    <img src="SC.jpg" alt="A Supportive Community" class="card-image">
-                    <h3>A Supportive Community</h3>
-                    <p>Join a welcoming community that fosters respect, friendship, and teamwork, where students support
-                        each other on their Taekwondo journey.</p>
+                <div class="tracks">
+                    <article class="track track--college" data-reveal style="--r:-1deg">
+                        <span class="big-num" aria-hidden="true">01</span>
+                        <h3>College Taekwondo Training</h3>
+                        <p>A varsity-only program. Specialized training that pushes college athletes toward their full potential in local, regional and national competitions.</p>
+                        <ul class="meta">
+                            <li>Mon · Wed · Fri · 9:00–11:00 AM</li>
+                            <li>Varsity only</li>
+                            <li>Sparring &amp; poomsae</li>
+                            <li>Competition prep</li>
+                        </ul>
+                    </article>
+                    <article class="track track--hs" data-reveal style="--r:1deg; --d:.12s">
+                        <span class="big-num" aria-hidden="true">02</span>
+                        <h3>High School Taekwondo Training</h3>
+                        <p>Two squads in one program: undertraining builds strong fundamentals, and the high school varsity competes for HAU in interschool and regional tournaments.</p>
+                        <ul class="meta">
+                            <li>Mon · Wed · Fri · 4:30–6:30 PM</li>
+                            <li>Undertraining + Varsity</li>
+                            <li>Competitions</li>
+                            <li>Beginner friendly</li>
+                        </ul>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Varsity and Undertraining Section -->
-    <section id="sports-program">
-        <div class="container">
-            <h2>Our Sports Program</h2>
-            <div class="program-details">
-                <div class="program-item varsity-team">
-                    <h3>Varsity Team</h3>
-                    <img src="VT.jpg" alt="Varsity Team" class="program-image">
-                    <p>Our varsity team consists of advanced students who represent HAU in local and national
-                        competitions. Selection is based on skill, dedication, and training performance.</p>
+        <!-- VIDEOS -->
+        <section class="section section--ink" id="videos">
+            <div class="wrap">
+                <div class="head" data-reveal>
+                    <p class="eyebrow"><span class="num">02</span> On the mat <span class="kr">선수</span></p>
+                    <h2>Watch us train</h2>
                 </div>
-                <div class="program-item undertraining-students">
-                    <h3>Undertraining Students</h3>
-                    <img src="UT.jpg" alt="Undertraining Students" class="program-image">
-                    <p>For students still developing their skills, we offer targeted training focused on improving
-                        technique, fitness, and mental resilience, with the goal of progressing to varsity level.</p>
+                <div class="videos">
+                    <figure class="video-card" data-reveal>
+                        <div class="frame">
+                            <video controls preload="metadata" playsinline>
+                                <source src="college_training.mp4#t=0.5" type="video/mp4">
+                                Your browser does not support embedded video.
+                            </video>
+                        </div>
+                        <figcaption><b>College training</b><span>IH-GYM session</span></figcaption>
+                    </figure>
+                    <figure class="video-card" data-reveal style="--d:.12s">
+                        <div class="frame">
+                            <video controls preload="metadata" playsinline>
+                                <source src="highschool_training.mp4#t=0.5" type="video/mp4">
+                                Your browser does not support embedded video.
+                            </video>
+                        </div>
+                        <figcaption><b>High school training</b><span>IH-GYM session</span></figcaption>
+                    </figure>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Who Can Join Section -->
-    <section id="who-can-join">
-        <div class="container">
-            <h2>Who Can Join?</h2>
-            <p>Our HAU Taekwondo Sports Program is exclusively designed for high school and college students enrolled at
-                Holy Angel University.</p>
-            <p>Whether you're a beginner or an experienced martial artist, we welcome students from both high school and
-                college levels who are eager to learn, grow, and compete. Please note that the program is only open to
-                HAU students, and participation is not available to the general public or non-HAU individuals.</p>
-            <a href="contact.html" class="cta-button">Ready to Start Your Taekwondo Journey at Holy Angel University?
-                Contact Us Now!</a>
-        </div>
-    </section>
+        <!-- TROPHY WALL -->
+        <section class="section section--paper2" id="results">
+            <div class="wrap">
+                <div class="head head--split" data-reveal>
+                    <div>
+                        <p class="eyebrow"><span class="num">03</span> Wall of medals <span class="kr">승리</span></p>
+                        <h2>Proof is on the podium</h2>
+                    </div>
+                    <p>Every medal here started as a sore leg and a long Monday practice. A few moments we're proud of.</p>
+                </div>
+                <div class="wall">
+                    <figure class="snap" data-reveal>
+                        <img src="r3-2026.jpg" alt="HAU athletes holding medals, certificates and a 3rd runner-up trophy at the PTA R3 Interschool Taekwondo Championship" loading="lazy" width="1600" height="1199">
+                        <figcaption><b>R3 Interschool Championship · 2026</b>Medals, certificates and a 3rd runner-up trophy.</figcaption>
+                    </figure>
+                    <figure class="snap" data-reveal style="--d:.1s">
+                        <img src="unigames-2026-team.jpg" alt="HAU Taekwondo medalists in maroon jackets with their coach at UNIGAMES in Kalibo" loading="lazy" width="1200" height="1600">
+                        <figcaption><b>UNIGAMES · 2026</b>Kalibo, Aklan.</figcaption>
+                    </figure>
+                    <figure class="snap" data-reveal style="--d:.2s">
+                        <img src="ucpl-2025.jpg" alt="HAU Taekwondo athletes wearing medals with their coaches at the UCPL 2025" loading="lazy" width="1600" height="1200">
+                        <figcaption><b>UCPL · 2025</b>Universities &amp; Colleges Premiere League.</figcaption>
+                    </figure>
+                </div>
+                <p style="margin-top:44px" data-reveal><a href="event.html#record" class="btn btn--maroon">See our full record <span class="arrow" aria-hidden="true">→</span></a></p>
+            </div>
+        </section>
 
-    <!-- Footer Section -->
-    <footer>
-        <div class="container">
-            <div class="footer-navigation">
-                <a href="index.html" class="nav-arrow" id="back-arrow" title="Back">
-                    &#8592; <!-- Left Arrow -->
-                </a>
-                <p>&copy; 2024 HAU Taekwondo Warriors. All rights reserved.</p>
-                <a href="about.html" class="nav-arrow" id="forward-arrow" title="Next">
-                    &#8594; <!-- Right Arrow -->
-                </a>
+        <!-- WHY JOIN -->
+        <section class="section" id="why">
+            <div class="wrap">
+                <div class="head" data-reveal>
+                    <p class="eyebrow"><span class="num">04</span> Why join us</p>
+                    <h2>More than a sport</h2>
+                </div>
+                <div class="cards">
+                    <article class="card" data-reveal>
+                        <div class="img"><img src="EC.jpg" alt="Coach guiding a student during training" loading="lazy"></div>
+                        <div class="body">
+                            <span class="idx">/01</span>
+                            <h3>Experienced coaches</h3>
+                            <p>Seasoned instructors give personal guidance, whether it's your first kick or your fiftieth match.</p>
+                        </div>
+                    </article>
+                    <article class="card" data-reveal style="--d:.08s">
+                        <div class="img"><img src="FTS.jpg" alt="Students training on the mats" loading="lazy"></div>
+                        <div class="body">
+                            <span class="idx">/02</span>
+                            <h3>Schedules that fit school</h3>
+                            <p>Training times built around your classes, with a focus on fitness, self-defense or competition.</p>
+                        </div>
+                    </article>
+                    <article class="card" data-reveal style="--d:.16s">
+                        <div class="img"><img src="LNC.jpg" alt="Taekwondo competition match" loading="lazy"></div>
+                        <div class="body">
+                            <span class="idx">/03</span>
+                            <h3>Real competition</h3>
+                            <p>Compete locally and nationally, and build the kind of confidence only a real match can teach.</p>
+                        </div>
+                    </article>
+                    <article class="card" data-reveal style="--d:.24s">
+                        <div class="img"><img src="SC.jpg" alt="Team members together after training" loading="lazy"></div>
+                        <div class="body">
+                            <span class="idx">/04</span>
+                            <h3>A team that has your back</h3>
+                            <p>Respect, friendship and teamwork. Teammates push you on the mat and look out for you off it.</p>
+                        </div>
+                    </article>
+                </div>
             </div>
-            <div class="social-icons">
-                <a href="https://www.facebook.com" target="_blank">
-                    <img src="fb.png" alt="Facebook">
-                </a>
-                <a href="https://www.twitter.com" target="_blank">
-                    <img src="twt.png" alt="Twitter">
-                </a>
-                <a href="https://www.instagram.com" target="_blank">
-                    <img src="ig.jpg" alt="Instagram">
-                </a>
+        </section>
+
+        <!-- VARSITY / UNDERTRAINING -->
+        <section class="section section--paper2" id="squads">
+            <div class="wrap">
+                <div class="head" data-reveal>
+                    <p class="eyebrow"><span class="num">05</span> Our squads</p>
+                    <h2>Where do you fit?</h2>
+                </div>
+                <div class="split" data-reveal>
+                    <article class="split-item">
+                        <img src="VT.jpg" alt="" loading="lazy">
+                        <div class="inner">
+                            <span class="label">High school + College</span>
+                            <h3>Varsity teams</h3>
+                            <p>Two varsity squads, high school and college, represent HAU in local, regional and national competitions. Selection is based on skill, dedication and training performance.</p>
+                        </div>
+                    </article>
+                    <article class="split-item">
+                        <img src="UT.jpg" alt="" loading="lazy">
+                        <div class="inner">
+                            <span class="label">High school</span>
+                            <h3>Undertraining</h3>
+                            <p>For high school students still building their game. Targeted training in technique, fitness and mental resilience, with a clear path up to the high school varsity.</p>
+                        </div>
+                    </article>
+                </div>
+                <ol class="pathway" data-reveal aria-label="Squad pathway">
+                    <li><small>High school</small>Undertraining</li>
+                    <li class="arrow" aria-hidden="true">→</li>
+                    <li><small>High school</small>Varsity</li>
+                    <li class="gap" aria-hidden="true"></li>
+                    <li class="col"><small>College</small>Varsity only</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- MISSION -->
+        <section class="section section--ink" id="mission">
+            <div class="wrap mission">
+                <div data-reveal>
+                    <p class="eyebrow"><span class="num">06</span> Our mission <span class="kr">정신</span></p>
+                    <blockquote style="margin-top:18px">We don't just train kicks. We train <em>character</em>.</blockquote>
+                    <p>Through Taekwondo we nurture discipline, strength and respect. Our instructors guide students physically and mentally, building integrity, perseverance and self-control.</p>
+                </div>
+                <ul class="checks" data-reveal style="--d:.12s">
+                    <li>Foster a supportive community where students challenge and encourage each other.</li>
+                    <li>Build confidence through effective self-defense skills and better fitness.</li>
+                    <li>Promote mental resilience and a positive attitude toward growth.</li>
+                    <li>Develop leadership and teamwork, inside and outside the dojang.</li>
+                    <li>Offer competitive training grounded in sportsmanship and goal-setting.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- WHO CAN JOIN -->
+        <section class="section section--maroon cta-band" id="join">
+            <div class="wrap">
+                <div data-reveal>
+                    <p class="eyebrow">Who can join</p>
+                    <h2 style="margin:14px 0 20px">Your first class<br>is one message away.</h2>
+                    <p>High school students can join undertraining as complete beginners or try out for the high school varsity. College students join through the college varsity, selected on skill and performance.</p>
+                    <p class="note">The program is exclusive to HAU students and is not open to the general public.</p>
+                </div>
+                <div class="actions" data-reveal style="--d:.12s">
+                    <a href="contact.html#message" class="btn">Start your journey <span class="arrow" aria-hidden="true">→</span></a>
+                    <a href="about.html#schedule" class="btn btn--ghost">View training schedule</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a class="brand" href="index.html">
+                        <img src="logohau.png" alt="" width="46" height="46">
+                        <span class="brand-text"><b>HAU Taekwondo</b><small>Holy Angel University</small></span>
+                    </a>
+                    <p>The Taekwondo sports program of Holy Angel University, training at the IH-GYM in Angeles City, Pampanga.</p>
+                    <p class="motto">Laus Deo Semper</p>
+                </div>
+                <div>
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="event.html">Events</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Reach us</h4>
+                    <ul>
+                        <li><a href="mailto:hautaekwondo@gmail.com">hautaekwondo@gmail.com</a></li>
+                        <li>IH-GYM, Holy Angel University</li>
+                        <li>Angeles City, Pampanga, Philippines</li>
+                        <li><a href="tel:+639123456789">+63 912 345 6789</a></li>
+                    </ul>
+                    <div class="socials">
+                        <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H7.8v3h2.6V21h3.1z"/></svg></a>
+                        <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg></a>
+                        <a href="https://x.com" target="_blank" rel="noopener" aria-label="X (Twitter)"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.8 3h3.1l-6.8 7.8 8 10.2h-6.3l-4.9-6.4L5.3 21H2.2l7.3-8.3L1.8 3h6.4l4.4 5.9L17.8 3zm-1.1 16.2h1.7L7.3 4.7H5.5l11.2 14.5z"/></svg></a>
+                    </div>
+                </div>
+            </div>
+            <div class="page-nav">
+                <a href="contact.html">← Contact</a>
+                <span>&copy; <span data-year>2026</span> HAU Taekwondo. All rights reserved.</span>
+                <a href="about.html">Next: About →</a>
             </div>
         </div>
+        <p class="footer-word" aria-hidden="true">Taekwondo</p>
+        <div class="belt" aria-hidden="true"></div>
     </footer>
-    
+
     <script src="script.js"></script>
-    
 </body>
 </html>

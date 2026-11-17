@@ -1,163 +1,377 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HAU Taekwondo Sports Program - Events</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Events | HAU Taekwondo</title>
+    <meta name="description" content="Training camps, tournaments and open houses of the Holy Angel University Taekwondo team, with event registration.">
+    <meta name="theme-color" content="#141113">
 
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32"  href="favicon-32.png">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Events | HAU Taekwondo">
+    <meta property="og:description" content="Training camps, championships and demonstrations of the HAU Taekwondo team.">
+    <meta property="og:image" content="https://adrianm16.github.io/HAUTKDwebsite/MSG.jpg">
+    <meta property="og:url" content="https://adrianm16.github.io/HAUTKDwebsite/event.html">
+
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" sizes="192x192" href="android-chrome-192.png">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Instrument+Sans:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@700;900&display=swap&text=%ED%83%9C%EA%B6%8C%EB%8F%84%EC%98%88%EC%9D%98%EC%97%BC%EC%B9%98%EC%9D%B8%EB%82%B4%EA%B7%B9%EA%B8%B0%EB%B0%B1%EC%A0%88%EB%B6%88%EA%B5%B4%EC%8B%A0%EC%A0%95%ED%9B%88%EB%A0%A8%EC%84%A0%EC%88%98%EC%8A%B9%EB%A6%AC%EC%82%AC%EB%B2%94">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="progress" aria-hidden="true"><span></span></div>
 
-    <!-- Header Section -->
-    <header>
-        <nav>
-            <div class="nav-container">
-                <img src="logohau.png" alt="HAU Logo" class="hau-logo"> 
-                <h1>HAU Taekwondo Team</h1>
-                <div class="hamburger" id="hamburger">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <ul class="nav-menu" id="nav-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="event.html">Events</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </div>
+    <header class="site-header">
+        <nav class="nav wrap" aria-label="Main">
+            <a class="brand" href="index.html">
+                <img src="logohau.png" alt="" width="46" height="46">
+                <span class="brand-text"><b>HAU Taekwondo</b><small>Holy Angel University</small></span>
+            </a>
+            <button class="menu-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="event.html" aria-current="page">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html#message" class="nav-cta">Join the team</a></li>
+            </ul>
         </nav>
-    </header>    
+    </header>
 
-    <!-- Image Section -->
-    <div class="image-container"> 
-        <img src="haulogo.jpg" alt="HAU Taekwondo Team" class="team-image">
-    </div>
+    <main id="main">
 
-    <!-- Events Section -->
-    <section id="events">
-        <div class="container">
-            <h2>Upcoming Activities and Competitions</h2>
-            <p>Stay updated on the latest activities, events, and competitions for the HAU Taekwondo Sports Program.
-                Join us for training camps, tournaments, and special events designed to enhance your skills and build
-                team spirit.</p>
+        <section class="page-hero">
+            <div class="bg" aria-hidden="true"><img src="r3-2026.jpg" alt=""></div>
+            <div class="wrap">
+                <p class="crumbs"><a href="index.html">Home</a> / Events</p>
+                <h1><span>Medals, camps &amp; championships</span></h1>
+                <p>Our competition record from 2024 to 2026, plus the camps and events where the HAU Taekwondo team shows up.</p>
+            </div>
+        </section>
+        <div class="belt" aria-hidden="true"></div>
 
-            <!-- Event Details -->
-            <div class="events-list">
-                <div class="event">
-                    <img src="IGYM.jpg" alt="Summer Training Camp" class="event-image">
-                    <h3>2024 HAU Taekwondo Summer Training Camp</h3>
-                    <p><strong>Date:</strong> April 1-5, 2024</p>
-                    <p><strong>Location:</strong> IH-GYM, Holy Angel University</p>
-                    <p><strong>Details:</strong> A week-long intensive training camp open to all skill levels, focusing on improving sparring techniques, forms, and physical conditioning. Led by Head Instructor Master John Cruz, this camp will prepare students for upcoming competitions.</p>
-                    <p><strong>Registration:</strong> Open until March 20, 2024 | <strong>Fee:</strong> PHP 1,500</p>
-                    <p><strong>Contact:</strong> hautaekwondo@gmail.com</p>
-                    <div class="map-container">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509619!2d144.95373531531465!3d-37.81627997975111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0a6a9e3f%3A0x5045675218ceed30!2sHoly%20Angel%20University!5e0!3m2!1sen!2sph!4v1614341542737!5m2!1sen!2sph" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <!-- TRACK RECORD -->
+        <section class="section section--paper2" id="record">
+            <div class="wrap">
+                <div class="head head--split" data-reveal>
+                    <div>
+                        <p class="eyebrow"><span class="num">01</span> Track record <span class="kr">승리</span></p>
+                        <h2>Our record, year by year</h2>
                     </div>
+                    <p>Newest first. Every one of these started at a Monday, Wednesday or Friday practice at the IH-GYM.</p>
                 </div>
 
-                <div class="event">
-                    <img src="ASA.jpg" alt="Regional Taekwondo Championship" class="event-image">
-                    <h3>Regional Taekwondo Championship</h3>
-                    <p><strong>Date:</strong> May 15, 2024</p>
-                    <p><strong>Location:</strong> Angeles Sports Arena, Angeles City</p>
-                    <p><strong>Details:</strong> The varsity team will compete in the annual Regional Taekwondo Championship. Spectators are welcome to support our athletes as they represent HAU in both individual and team sparring categories.</p>
-                    <p><strong>Spectator Fee:</strong> PHP 100 (Free for HAU students with ID)</p>
-                    <p><strong>Contact:</strong> hautaekwondo@gmail.com</p>
-                    <div class="map-container">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509619!2d144.95373531531465!3d-37.81627997975111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0a6a9e3f%3A0x5045675218ceed30!2sAngeles%20Sports%20Arena!5e0!3m2!1sen!2sph!4v1614341542737!5m2!1sen!2sph" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
+                <ol class="record">
+
+                    <li class="rec" data-reveal>
+                        <div class="rec-year">2026<small>Region III</small></div>
+                        <div class="rec-card">
+                            <div class="rec-photos two">
+                                <figure class="snap">
+                                    <img src="r3-2026.jpg" alt="HAU athletes with medals, certificates and a 3rd runner-up trophy in front of the PTA R3 Interschool Taekwondo Championship backdrop" loading="lazy" width="1600" height="1199">
+                                    <figcaption>Medals, certificates and the trophy.</figcaption>
+                                </figure>
+                                <figure class="snap clip">
+                                    <img src="r3-2026-news.jpg" alt="Newspaper clipping: Guardians dominate R3 taekwondo with 16-medal haul" loading="lazy" width="828" height="1104">
+                                    <figcaption>In the paper.</figcaption>
+                                </figure>
+                            </div>
+                            <div class="rec-body">
+                                <span class="rec-tag">Interschool</span>
+                                <h3>R3 Smart/MVPSF Interschool Taekwondo Championship</h3>
+                                <p>The Philippine Taekwondo Association's Region 3 interschool championship. The team came home with medals, certificates and the <strong>3rd runner-up</strong> trophy.</p>
+                                <blockquote>"Guardians dominate R3 taekwondo with 16-medal haul"<cite>Headline, by Irah Jane Yanga</cite></blockquote>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="rec" data-reveal>
+                        <div class="rec-year">2026<small>Kalibo</small></div>
+                        <div class="rec-card">
+                            <div class="rec-photos two">
+                                <figure class="snap tall">
+                                    <img src="unigames-2026-team.jpg" alt="HAU Taekwondo medalists in maroon jackets with their coach under the Bagong Kalibo sign" loading="lazy" width="1200" height="1600">
+                                    <figcaption>The whole UNIGAMES crew.</figcaption>
+                                </figure>
+                                <figure class="snap tall">
+                                    <img src="unigames-2026-medalists.jpg" alt="Eight HAU athletes and their coach showing medals beside the UNIGAMES Taekwondo banner" loading="lazy" width="1200" height="1600">
+                                    <figcaption>Medals out.</figcaption>
+                                </figure>
+                            </div>
+                            <div class="rec-body">
+                                <span class="rec-tag gold">UNIGAMES</span>
+                                <h3>UNIGAMES 2026 · Taekwondo</h3>
+                                <p>Kalibo, Aklan. The Angelites made the trip in matching maroon and came home with medals around their necks.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="rec" data-reveal>
+                        <div class="rec-year">2025<small>Oct 25</small></div>
+                        <div class="rec-card rec-card--text">
+                            <div class="medals" aria-hidden="true"><span class="silver">2nd</span><span class="bronze">3rd</span></div>
+                            <div class="rec-body">
+                                <span class="rec-tag gold">UNIGAMES</span>
+                                <h3>University Games 2025 · College</h3>
+                                <p>Two podium finishes for the HAU Taekwondo college varsity: <strong>Adrian M. Anunciacion</strong> took <strong>silver</strong> in Men's Welterweight, and <strong>Jhudiel Marie Rivera</strong> took <strong>bronze</strong>. The 26th UNIGAMES were held in Bacolod, Negros Occidental.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="rec" data-reveal>
+                        <div class="rec-year">2025<small>UCPL</small></div>
+                        <div class="rec-card">
+                            <div class="rec-photos">
+                                <figure class="snap">
+                                    <img src="ucpl-2025.jpg" alt="HAU Taekwondo athletes wearing medals with their coaches inside a university gym" loading="lazy" width="1600" height="1200">
+                                    <figcaption>Medals, trophies and the coaching staff.</figcaption>
+                                </figure>
+                            </div>
+                            <div class="rec-body">
+                                <span class="rec-tag">League</span>
+                                <h3>Universities &amp; Colleges Premiere League</h3>
+                                <p>Back for a second straight season. The varsity collected medals across both men's and women's divisions.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="rec" data-reveal>
+                        <div class="rec-year">2024<small>UCPL</small></div>
+                        <div class="rec-card">
+                            <div class="rec-photos">
+                                <figure class="snap tall">
+                                    <img src="ucpl-2024.jpg" alt="The HAU Taekwondo team posing on the mats with medals at the Universities and Colleges Premiere League" loading="lazy" width="1200" height="1600">
+                                    <figcaption>Loud on the podium, as usual.</figcaption>
+                                </figure>
+                            </div>
+                            <div class="rec-body">
+                                <span class="rec-tag">League</span>
+                                <h3>Universities &amp; Colleges Premiere League</h3>
+                                <p>A full HAU crew on the mats, with the medals to show for it.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="rec" data-reveal>
+                        <div class="rec-year">2024<small>Jan 20–27</small></div>
+                        <div class="rec-card">
+                            <div class="rec-photos">
+                                <figure class="snap tall">
+                                    <img src="CTW.jpg" alt="A stack of 25th UNIGAMES medals laid over a Holy Angel University jacket" loading="lazy" width="1242" height="1656">
+                                    <figcaption>One jacket, a lot of medals.</figcaption>
+                                </figure>
+                            </div>
+                            <div class="rec-body">
+                                <span class="rec-tag gold">UNIGAMES</span>
+                                <h3>25th UNIGAMES</h3>
+                                <p>Dipolog City. A haul of gold, silver and bronze medals for HAU Taekwondo.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="rec" data-reveal>
+                        <div class="rec-year">Earlier<small>Highlights</small></div>
+                        <div class="rec-earlier">
+                            <figure class="snap">
+                                <img src="regional.jpg" alt="HAU athletes wearing medals on stage at the Pampanga Taekwondo Championships" loading="lazy" width="1242" height="925">
+                                <figcaption><b>Pampanga Taekwondo Championships</b>Gold, silver and bronze.</figcaption>
+                            </figure>
+                            <figure class="snap">
+                                <img src="VP.jpg" alt="HAU Taekwondo athletes and their coach showing medals under the UNIGAMES banner" loading="lazy" width="1242" height="932">
+                                <figcaption><b>UNIGAMES</b>Medalists with their coach.</figcaption>
+                            </figure>
+                            <figure class="snap">
+                                <img src="VT.jpg" alt="The HAU Taekwondo team in red and blue doboks at the Philippine Taekwondo League" loading="lazy" width="960" height="720">
+                                <figcaption><b>Philippine Taekwondo League</b>The squad in full doboks.</figcaption>
+                            </figure>
+                        </div>
+                    </li>
+
+                </ol>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="wrap">
+                <div class="head" data-reveal>
+                    <p class="eyebrow"><span class="num">02</span> Event calendar <span class="kr">선수</span></p>
+                    <h2>Activities &amp; competitions</h2>
                 </div>
 
-                <div class="event">
-                    <img src="IGYM.jpg" alt="Open House" class="event-image">
-                    <h3>HAU Taekwondo Open House & Demonstration</h3>
-                    <p><strong>Date:</strong> June 10, 2024</p>
-                    <p><strong>Location:</strong> IH-GYM, Holy Angel University</p>
-                    <p><strong>Details:</strong> This event is open to the public and will showcase the skills of our Taekwondo students, including forms and sparring demonstrations. Attendees can also learn more about our training programs and speak directly with our instructors.</p>
-                    <p><strong>Admission:</strong> Free | <strong>Contact:</strong> hautaekwondo@gmail.com</p>
-                    <div class="map-container">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509619!2d144.95373531531465!3d-37.81627997975111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0a6a9e3f%3A0x5045675218ceed30!2sIH-GYM%20Holy%20Angel%20University!5e0!3m2!1sen!2sph!4v1614341542737!5m2!1sen!2sph" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
-                </div>
+                <div class="event-list">
 
-                <div class="event">
-                    <img src="MSG.jpg" alt="National Taekwondo Tournament" class="event-image">
-                    <h3>National Taekwondo Tournament</h3>
-                    <p><strong>Date:</strong> July 20-22, 2024</p>
-                    <p><strong>Location:</strong> Manila Sports Complex</p>
-                    <p><strong>Details:</strong> Our top-performing varsity athletes will participate in the National Taekwondo Tournament, facing off against competitors from all over the country.</p>
-                    <p><strong>Spectator Fee:</strong> PHP 300 | <strong>Contact:</strong> hautaekwondo@gmail.com</p>
-                    <div class="map-container">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509619!2d144.95373531531465!3d-37.81627997975111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0a6a9e3f%3A0x5045675218ceed30!2sManila%20Sports%20Complex!5e0!3m2!1sen!2sph!4v1614341542737!5m2!1sen!2sph" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
+                    <article class="event" data-end="2024-04-05" data-reveal>
+                        <div class="date"><span class="m">Apr</span><span class="d sm">1–5</span><span class="y">2024</span></div>
+                        <div class="img"><img src="IGYM.jpg" alt="Students training at the IH-GYM" loading="lazy"></div>
+                        <div class="body">
+                            <span class="status">Upcoming</span>
+                            <h3>HAU Taekwondo Summer Training Camp</h3>
+                            <dl class="facts">
+                                <dt>Where</dt><dd>IH-GYM, Holy Angel University</dd>
+                                <dt>Fee</dt><dd>PHP 1,500 · registration until March 20</dd>
+                                <dt>Contact</dt><dd><a href="mailto:hautaekwondo@gmail.com">hautaekwondo@gmail.com</a></dd>
+                            </dl>
+                            <p>A week-long intensive camp for all skill levels: sparring, forms and conditioning. Led by Head Instructor Master John Cruz to prepare students for the competition season.</p>
+                            <details class="map-toggle">
+                                <summary>Show map</summary>
+                                <iframe title="Map: Holy Angel University" src="https://maps.google.com/maps?q=Holy%20Angel%20University%2C%20Angeles%20City&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </details>
+                        </div>
+                    </article>
+
+                    <article class="event" data-end="2024-05-15" data-reveal>
+                        <div class="date"><span class="m">May</span><span class="d">15</span><span class="y">2024</span></div>
+                        <div class="img"><img src="ASA.jpg" alt="Angeles sports arena" loading="lazy"></div>
+                        <div class="body">
+                            <span class="status">Upcoming</span>
+                            <h3>Regional Taekwondo Championship</h3>
+                            <dl class="facts">
+                                <dt>Where</dt><dd>Angeles Sports Arena, Angeles City</dd>
+                                <dt>Spectators</dt><dd>PHP 100 · free for HAU students with ID</dd>
+                                <dt>Contact</dt><dd><a href="mailto:hautaekwondo@gmail.com">hautaekwondo@gmail.com</a></dd>
+                            </dl>
+                            <p>The varsity team competes in the annual Regional Championship in individual and team sparring. Come cheer on the Angelites!</p>
+                            <details class="map-toggle">
+                                <summary>Show map</summary>
+                                <iframe title="Map: Angeles City" src="https://maps.google.com/maps?q=Angeles%20City%20Sports%20Arena%2C%20Pampanga&amp;z=14&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </details>
+                        </div>
+                    </article>
+
+                    <article class="event" data-end="2024-06-10" data-reveal>
+                        <div class="date"><span class="m">Jun</span><span class="d">10</span><span class="y">2024</span></div>
+                        <div class="img"><img src="IGYM.jpg" alt="IH-GYM at Holy Angel University" loading="lazy" style="object-position:right"></div>
+                        <div class="body">
+                            <span class="status">Upcoming</span>
+                            <h3>HAU Taekwondo Open House &amp; Demonstration</h3>
+                            <dl class="facts">
+                                <dt>Where</dt><dd>IH-GYM, Holy Angel University</dd>
+                                <dt>Admission</dt><dd>Free</dd>
+                                <dt>Contact</dt><dd><a href="mailto:hautaekwondo@gmail.com">hautaekwondo@gmail.com</a></dd>
+                            </dl>
+                            <p>Open to the public: forms and sparring demonstrations by our students, plus a chance to talk directly with the instructors about joining.</p>
+                            <details class="map-toggle">
+                                <summary>Show map</summary>
+                                <iframe title="Map: Holy Angel University" src="https://maps.google.com/maps?q=Holy%20Angel%20University%2C%20Angeles%20City&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </details>
+                        </div>
+                    </article>
+
+                    <article class="event" data-end="2024-07-22" data-reveal>
+                        <div class="date"><span class="m">Jul</span><span class="d sm">20–22</span><span class="y">2024</span></div>
+                        <div class="img"><img src="MSG.jpg" alt="National tournament venue" loading="lazy"></div>
+                        <div class="body">
+                            <span class="status">Upcoming</span>
+                            <h3>National Taekwondo Tournament</h3>
+                            <dl class="facts">
+                                <dt>Where</dt><dd>Manila Sports Complex</dd>
+                                <dt>Spectators</dt><dd>PHP 300</dd>
+                                <dt>Contact</dt><dd><a href="mailto:hautaekwondo@gmail.com">hautaekwondo@gmail.com</a></dd>
+                            </dl>
+                            <p>Our top varsity athletes face competitors from all over the country. Big stage, big energy.</p>
+                            <details class="map-toggle">
+                                <summary>Show map</summary>
+                                <iframe title="Map: Manila" src="https://maps.google.com/maps?q=Rizal%20Memorial%20Sports%20Complex%2C%20Manila&amp;z=14&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </details>
+                        </div>
+                    </article>
+
                 </div>
             </div>
+        </section>
 
-            <!-- Registration Form Section -->
-            <div class="registration">
-                <h2>Register for Upcoming Events</h2>
-                <p>If you're interested in joining any of the upcoming activities or competitions, please fill out the form below:</p>
-                <form action="/submit-registration" method="post">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="phone">Phone Number:</label>
-                    <input type="tel" id="phone" name="phone" required>
-
-                    <label for="event">Select Event:</label>
-                    <select id="event" name="event" required>
-                        <option value="summer_training_camp">2024 HAU Taekwondo Summer Training Camp</option>
-                        <option value="regional_championship">Regional Taekwondo Championship</option>
-                        <option value="open_house">HAU Taekwondo Open House & Demonstration</option>
-                        <option value="national_tournament">National Taekwondo Tournament</option>
-                    </select>
-
-                    <button type="submit">Register</button>
+        <!-- REGISTRATION -->
+        <section class="section section--ink" id="register">
+            <div class="wrap form-wrap">
+                <div data-reveal>
+                    <p class="eyebrow"><span class="num">03</span> Register</p>
+                    <h2 style="font-size:clamp(2.4rem,6vw,4.4rem);margin:14px 0 20px">Count me in</h2>
+                    <p style="color:rgba(243,239,233,.75)">Want to join an activity, tryout or competition? Fill this in. It opens an email to the team with your details already written, so you just hit send.</p>
+                </div>
+                <form class="form" data-mailto data-subject="Event registration" data-reveal style="--d:.1s">
+                    <div class="field"><label for="reg-name">Full name</label><input type="text" id="reg-name" name="name" autocomplete="name" required></div>
+                    <div class="field"><label for="reg-email">Email</label><input type="email" id="reg-email" name="email" autocomplete="email" required></div>
+                    <div class="field"><label for="reg-phone">Phone number</label><input type="tel" id="reg-phone" name="phone" autocomplete="tel" required></div>
+                    <div class="field">
+                        <label for="reg-level">Level</label>
+                        <select id="reg-level" name="level" required>
+                            <option value="hs_undertraining">High school Â· Undertraining (beginner)</option>
+                            <option value="hs_varsity">High school Â· Varsity</option>
+                            <option value="college_varsity">College Â· Varsity</option>
+                        </select>
+                    </div>
+                    <div class="field full">
+                        <label for="reg-event">Event</label>
+                        <select id="reg-event" name="event" required>
+                            <option value="next">Next tryouts / next available event</option>
+                            <option value="summer_training_camp">HAU Taekwondo Summer Training Camp</option>
+                            <option value="regional_championship">Regional Taekwondo Championship</option>
+                            <option value="open_house">HAU Taekwondo Open House &amp; Demonstration</option>
+                            <option value="national_tournament">National Taekwondo Tournament</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn--maroon">Register <span class="arrow" aria-hidden="true">→</span></button>
+                    <p class="form-msg" role="status"></p>
                 </form>
             </div>
-        </div>
-    </section>
-    
-    <!-- Footer Section -->
-    <footer>
-        <div class="container">
-            <div class="footer-navigation">
-                <a href="about.html" class="nav-arrow" id="back-arrow" title="Back">
-                    &#8592; <!-- Left Arrow -->
-                </a>
-                <p>&copy; 2024 HAU Taekwondo Warriors. All rights reserved.</p>
-                <a href="contact.html" class="nav-arrow" id="forward-arrow" title="Next">
-                    &#8594; <!-- Right Arrow -->
-                </a>
-            </div>
-            <div class="social-icons">
-                <a href="https://www.facebook.com" target="_blank">
-                    <img src="fb.png" alt="Facebook">
-                </a>
-                <a href="https://www.twitter.com" target="_blank">
-                    <img src="twt.png" alt="Twitter">
-                </a>
-                <a href="https://www.instagram.com" target="_blank">
-                    <img src="ig.jpg" alt="Instagram">
-                </a>
-            </div>
-        </div>
-    </footer>
-    
-    <script src="script.js"></script>
+        </section>
 
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a class="brand" href="index.html">
+                        <img src="logohau.png" alt="" width="46" height="46">
+                        <span class="brand-text"><b>HAU Taekwondo</b><small>Holy Angel University</small></span>
+                    </a>
+                    <p>The Taekwondo sports program of Holy Angel University, training at the IH-GYM in Angeles City, Pampanga.</p>
+                    <p class="motto">Laus Deo Semper</p>
+                </div>
+                <div>
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="event.html">Events</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Reach us</h4>
+                    <ul>
+                        <li><a href="mailto:hautaekwondo@gmail.com">hautaekwondo@gmail.com</a></li>
+                        <li>IH-GYM, Holy Angel University</li>
+                        <li>Angeles City, Pampanga, Philippines</li>
+                        <li><a href="tel:+639123456789">+63 912 345 6789</a></li>
+                    </ul>
+                    <div class="socials">
+                        <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H7.8v3h2.6V21h3.1z"/></svg></a>
+                        <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg></a>
+                        <a href="https://x.com" target="_blank" rel="noopener" aria-label="X (Twitter)"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.8 3h3.1l-6.8 7.8 8 10.2h-6.3l-4.9-6.4L5.3 21H2.2l7.3-8.3L1.8 3h6.4l4.4 5.9L17.8 3zm-1.1 16.2h1.7L7.3 4.7H5.5l11.2 14.5z"/></svg></a>
+                    </div>
+                </div>
+            </div>
+            <div class="page-nav">
+                <a href="about.html">← About</a>
+                <span>&copy; <span data-year>2026</span> HAU Taekwondo. All rights reserved.</span>
+                <a href="contact.html">Next: Contact →</a>
+            </div>
+        </div>
+        <p class="footer-word" aria-hidden="true">Taekwondo</p>
+        <div class="belt" aria-hidden="true"></div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

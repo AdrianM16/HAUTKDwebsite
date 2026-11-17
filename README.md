@@ -1,73 +1,47 @@
 # HAU Taekwondo Sports Program Website
 
-Welcome to the **HAU Taekwondo Sports Program Website**. This website showcases the Holy Angel University's Taekwondo program, providing details about training, events, and more. The site is fully responsive, ensuring a seamless user experience across desktop, tablet, and mobile devices.
+Website for the **Holy Angel University Taekwondo Sports Program** in Angeles City, Philippines. It shows the program, coaches, squads, training schedule, competition record, events, and how HAU students can join.
 
-## Table of Contents
+**Live site:** https://adrianm16.github.io/HAUTKDwebsite/
 
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Setup and Installation](#setup-and-installation)
-- [Usage](#usage)
-- [Screenshots](#screenshots)
-- [Contributing](#contributing)
-- [License](#license)
+## Pages
 
-## Features
+| Page | Content |
+| --- | --- |
+| `index.html` | Home: program tracks, training videos, medal wall, squads, mission, how to join |
+| `about.html` | Coaches, gallery, training levels, the five tenets, facilities, weekly schedule |
+| `event.html` | Competition record by year, event calendar, registration form |
+| `contact.html` | Contact details, message form, map |
+| `404.html` | Not-found page |
 
-- **Responsive Design:** The website adapts to various screen sizes, ensuring a smooth experience on desktop, tablet, and mobile.
-- **Pages:**
-  - **Home Page:** Features an introductory hero banner, image section, and quick navigation.
-  - **About Us Page:** Provides information about the Taekwondo team, instructors, and training schedules.
-  - **Events Page:** Lists upcoming and past events, complete with a registration form.
-  - **Contact Page:** Includes a responsive map and a contact form for inquiries.
-- **Interactive Elements:** Video galleries with auto-pause when scrolling and mobile-friendly navigation.
-- **Mobile Navigation:** A hamburger menu is available for smaller screens.
+## Design
 
-## Technologies Used
+- **Colors:** HAU maroon `#6E0A16`, wine `#7A2B3A`, off-white `#F3EFE9`, ash `#8C8C8C` and ink `#141113`, with gold `#E7B21F` from the HAU crest. Belt colors are used for small details.
+- **Fonts:** Big Shoulders Display for headings, Instrument Sans for text, Noto Serif KR for the Korean words.
+- **Motion:** sections slide in on scroll, a belt-colored progress bar, a drawn underline in the hero, taped photos, and a ticker of the five tenets. Motion turns off when "reduce motion" is enabled on the device.
 
-- **HTML5**: For the structure and layout of the web pages.
-- **CSS3**: For the styling and responsive design.
-- **JavaScript**: Used for handling interactive elements such as the hamburger menu and video controls.
-- **Google Maps API**: For embedding a map on the Contact page (if applicable).
+Colors and fonts are set at the top of `styles.css`.
 
-## Setup and Installation
+## Forms
 
-You can view the live site directly here: [HAU Taekwondo Website](https://adrianm16.github.io/HAUTKDwebsite/)
+The registration and contact forms open the visitor's email app with the message already filled in, addressed to `hautaekwondo@gmail.com`. To change the address, edit `CONTACT_EMAIL` in `script.js` and the `mailto:` links in the HTML.
 
-To run the project locally, follow these steps:
+## Updating content
 
-1. **Clone the repository**:
-    ```bash
-    git clone https://github.com/adrianm16/HAUTKDwebsite.git
-    ```
+- **Events:** in `event.html`, copy an `<article class="event">` block and change its `data-end="YYYY-MM-DD"`, date, text and image. The Upcoming / Completed label updates by itself.
+- **Competition record:** in `event.html`, copy an `<li class="rec">` block inside `#record`.
+- **Schedule:** edit the `.timetable` block in `about.html`.
+- **Photos:** add the image to the folder and update the `src` and `alt`.
 
-2. **Navigate to the project directory**:
-    ```bash
-    cd HAUTKDwebsite
-    ```
+## Run locally
 
-3. **Open the `index.html` file** in your browser to view the website locally.
+```bash
+git clone https://github.com/AdrianM16/HAUTKDwebsite.git
+cd HAUTKDwebsite
+```
 
-## Usage
+Then open `index.html` in a browser.
 
-- The website is accessible at the following link: [HAU Taekwondo Website](https://adrianm16.github.io/HAUTKDwebsite/).
-- Browse through different sections (Home, About Us, Events, Contact) using the navigation bar.
-- The site adjusts automatically to different screen sizes (desktop, tablet, mobile).
+## Built with
 
-## Screenshots
-
-_Does not have screenshots yet.
-
-## Contributing
-
-Contributions are welcome! If you'd like to improve this project, feel free to fork the repository, make your changes, and submit a pull request.
-
-1. Fork the repository.
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`).
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
-4. Push to the branch (`git push origin feature/AmazingFeature`).
-5. Open a pull request.
-
-## License
-
-This project does not have licensed yet.
+HTML, CSS and JavaScript. Hosted on GitHub Pages.
